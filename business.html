@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사업 영역 - CTE</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- 네비게이션 -->
+    <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <span class="text-2xl font-bold text-green-600">CTE</span>
+                        <span class="ml-2 text-sm text-gray-600">Climate-Tech Energy</span>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-green-600 transition-colors">홈</a>
+                    <a href="about.html" class="text-gray-700 hover:text-green-600 transition-colors">회사소개</a>
+                    <a href="business.html" class="text-green-600 font-semibold">사업영역</a>
+                    <a href="projects.html" class="text-gray-700 hover:text-green-600 transition-colors">프로젝트</a>
+                    <a href="impact.html" class="text-gray-700 hover:text-green-600 transition-colors">임팩트</a>
+                    <a href="partnership.html" class="text-gray-700 hover:text-green-600 transition-colors">파트너십</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-green-600 transition-colors">연락처</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-700">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+            <div id="mobile-menu" class="md:hidden hidden">
+                <div class="px-2 pt-2 pb-3 space-y-1">
+                    <a href="index.html" class="block px-3 py-2 text-gray-700 hover:text-green-600">홈</a>
+                    <a href="about.html" class="block px-3 py-2 text-gray-700 hover:text-green-600">회사소개</a>
+                    <a href="business.html" class="block px-3 py-2 text-green-600 font-semibold">사업영역</a>
+                    <a href="projects.html" class="block px-3 py-2 text-gray-700 hover:text-green-600">프로젝트</a>
+                    <a href="impact.html" class="block px-3 py-2 text-gray-700 hover:text-green-600">임팩트</a>
+                    <a href="partnership.html" class="block px-3 py-2 text-gray-700 hover:text-green-600">파트너십</a>
+                    <a href="contact.html" class="block px-3 py-2 text-gray-700 hover:text-green-600">연락처</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 메인 콘텐츠 -->
+    <main class="pt-16 min-h-screen bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <!-- 페이지 헤더 -->
+            <div class="text-center mb-12">
+                <h1 class="text-4xl font-bold text-gray-800 mb-4">사업 영역</h1>
+                <p class="text-xl text-green-600">Climate-Tech Carbon Credit Business Development</p>
+            </div>
+
+            <!-- 주요 사업 영역 -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
+                <!-- 탄소크레딧 사업 -->
+                <div class="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow card-hover">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-certificate text-green-600 text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-800">탄소크레딧 사업</h3>
+                            <p class="text-gray-600">동남아시아 탄소배출권 발행 및 거래</p>
+                        </div>
+                    </div>
+                    <ul class="space-y-3">
+                        <li class="flex items-center text-gray-700">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>국제감축사업 연계 탄소크레딧 개발</span>
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>파리협정 제6조2항 ITMO 프로젝트</span>
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>라오스 탄소시장 확장 협력</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- 청정에너지 사업 -->
+                <div class="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow card-hover">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-solar-panel text-green-600 text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-800">청정에너지 사업</h3>
+                            <p class="text-gray-600">태양광, ESS, 바이오가스, 마이크로그리드</p>
+                        </div>
+                    </div>
+                    <ul class="space-y-3">
+                        <li class="flex items-center text-gray-700">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>우돔싸이주 100MW 태양광 발전 프로젝트</span>
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>에너지저장시스템(ESS) 연계 솔루션</span>
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>농장 폐기물 바이오가스화 발전</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- EV 전환 사업 -->
+                <div class="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow card-hover">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-charging-station text-green-600 text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-800">EV 전환 사업</h3>
+                            <p class="text-gray-600">이륜, 사륜 차량 전기화 지원</p>
+                        </div>
+                    </div>
+                    <ul class="space-y-3">
+                        <li class="flex items-center text-gray-700">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>연간 10,000대 EV 전환 목표</span>
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>전환 차량 대상 탄소크레딧 발생</span>
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>친환경 수송 인프라 구축</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- 국제감축사업 -->
+                <div class="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow card-hover">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-globe-asia text-green-600 text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-800">국제감축사업</h3>
+                            <p class="text-gray-600">국제협력 기반 온실가스 감축</p>
+                        </div>
+                    </div>
+                    <ul class="space-y-3">
+                        <li class="flex items-center text-gray-700">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>온실가스 국제감축사업 예타 진행</span>
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>라오스 지속가능발전목표(SDGs) 기여</span>
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>비엔티안시 농업 폐기물 활용 사업</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 사업 개발 목표 -->
+            <div class="bg-white rounded-lg shadow-lg p-8">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">
+                    <span class="border-b-4 border-green-600 pb-2">사업 개발 목표</span>
+                </h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-green-600 mb-2" data-counter="300">300</div>
+                        <div class="text-lg font-semibold text-gray-700">MW+</div>
+                        <div class="text-gray-600">태양광 개발</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-green-600 mb-2" data-counter="100000">100,000</div>
+                        <div class="text-lg font-semibold text-gray-700">톤/년</div>
+                        <div class="text-gray-600">탄소감축량</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-green-600 mb-2" data-counter="20">20</div>
+                        <div class="text-lg font-semibold text-gray-700">개소+</div>
+                        <div class="text-gray-600">친환경 농장</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-green-600 mb-2" data-counter="10000">10,000</div>
+                        <div class="text-lg font-semibold text-gray-700">대/년</div>
+                        <div class="text-gray-600">EV 전환</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 다음 페이지 네비게이션 -->
+            <div class="text-center mt-12">
+                <a href="projects.html" class="bg-green-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors inline-block">
+                    주요 프로젝트 보기 <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- 푸터 -->
+    <footer class="bg-gray-800 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="text-2xl font-bold text-green-400 mb-4">CTE</div>
+                    <p class="text-gray-300 mb-4">라오스 탄소중립, 지속가능한 에너지 솔루션</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">사업 영역</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>탄소크레딧 사업</li>
+                        <li>청정에너지 개발</li>
+                        <li>EV 전환 사업</li>
+                        <li>국제감축사업</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">주요 프로젝트</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>우돔싸이 100MW 태양광</li>
+                        <li>바이오가스+ESS 프로젝트</li>
+                        <li>국제감축사업</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">연락처</h3>
+                    <div class="space-y-2 text-gray-300">
+                        <p><i class="fas fa-envelope mr-2"></i>paulyang@ctoe.co.kr</p>
+                        <p><i class="fas fa-phone mr-2"></i>+82-2-123-4567</p>
+                        <p><i class="fas fa-map-marker-alt mr-2"></i>서울 양재동 NH디지털혁신캠퍼스</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 CTE Co., Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
