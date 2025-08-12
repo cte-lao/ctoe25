@@ -42,6 +42,34 @@
         .event-official { background-color: #fef3c7; color: #92400e; }
         .event-seminar { background-color: #f3e8ff; color: #7e22ce; }
         .event-support { background-color: #dcfce7; color: #166534; }
+        .action-img {
+            border-radius: 6px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .featured-event {
+            border: none;
+            padding: 0;
+            display: flex;
+            margin-bottom: 16px;
+        }
+        .featured-event::before {
+            display: none;
+        }
+        .featured-content {
+            padding: 10px 15px;
+            border-left: 3px solid #10b981;
+            position: relative;
+        }
+        .featured-content::before {
+            content: '';
+            position: absolute;
+            left: -9px;
+            top: 15px;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: #10b981;
+        }
     </style>
 </head>
 <body>
@@ -65,7 +93,7 @@
                     <a class="text-gray-700 hover:text-green-600 transition-colors" href="projects.html">프로젝트</a>
                     <a class="text-gray-700 hover:text-green-600 transition-colors" href="impact.html">임팩트</a>
                     <a class="text-gray-700 hover:text-green-600 transition-colors" href="partnership.html">파트너십</a>
-                    <a class="text-green-600 font-semibold" href="actions.html">액션</a>
+                    <a class="text-green-600 font-semibold" href="actions.html">라오스활동</a>
                     <a class="text-gray-700 hover:text-green-600 transition-colors" href="contact.html">연락처</a>
                 </div>
 
@@ -135,13 +163,17 @@
                 <div class="bg-white p-6 rounded-lg shadow-sm">
                     <h2 class="text-2xl font-semibold text-gray-700 mb-6 border-b-2 border-green-500 pb-2">2024.12 - 2025.03</h2>
                     
-                    <div class="timeline-card p-4 rounded-lg">
-                        <div class="flex justify-between items-center mb-2">
-                            <span class="event-type event-meeting">현장미팅</span>
-                            <span class="text-sm text-gray-500 font-medium">2024.12.07</span>
+                    <!-- Featured event with image: Solar site meeting -->
+                    <div class="timeline-card featured-event mb-4">
+                        <img src="https://page.gensparksite.com/slides_images/fd77feab17de9538c9af91bb009676c8.jpg" alt="태양광 현장 미팅" class="action-img w-40 h-28 object-cover rounded-l-lg">
+                        <div class="featured-content flex-1">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="event-type event-meeting">현장미팅</span>
+                                <span class="text-sm text-gray-500 font-medium">2024.12.07</span>
+                            </div>
+                            <div class="font-bold text-gray-800 mb-1">PV 설치 사이트 미팅</div>
+                            <div class="text-sm text-gray-600">태양광 발전소 부지 조사 및 설치 계획 논의</div>
                         </div>
-                        <div class="font-bold text-gray-800 mb-1">PV 설치 사이트 미팅</div>
-                        <div class="text-sm text-gray-600">태양광 발전소 부지 조사 및 설치 계획 논의</div>
                     </div>
 
                     <div class="timeline-card p-4 rounded-lg">
@@ -162,13 +194,17 @@
                         <div class="text-sm text-gray-600">라오스 정부 관계자 대상 국제 탄소시장 교육</div>
                     </div>
 
-                    <div class="timeline-card p-4 rounded-lg">
-                        <div class="flex justify-between items-center mb-2">
-                            <span class="event-type event-mou">MOA체결</span>
-                            <span class="text-sm text-gray-500 font-medium">2025.01</span>
+                    <!-- Featured event with image: MOA/LOI signing -->
+                    <div class="timeline-card featured-event mb-4">
+                        <img src="https://page.gensparksite.com/slides_images/a2366c7df34d706a5036c3658f485178.jpg" alt="MOA 체결 장면" class="action-img w-40 h-28 object-cover rounded-l-lg">
+                        <div class="featured-content flex-1">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="event-type event-mou">MOA체결</span>
+                                <span class="text-sm text-gray-500 font-medium">2025.01</span>
+                            </div>
+                            <div class="font-bold text-gray-800 mb-1">RIEM-Finger-CTE MOA 체결</div>
+                            <div class="text-sm text-gray-600">청정에너지 개발 및 탄소배출권 사업 협력 약정</div>
                         </div>
-                        <div class="font-bold text-gray-800 mb-1">RIEM-Finger-CTE MOA 체결</div>
-                        <div class="text-sm text-gray-600">청정에너지 개발 및 탄소배출권 사업 협력 약정</div>
                     </div>
 
                     <div class="timeline-card p-4 rounded-lg">
@@ -194,13 +230,17 @@
                 <div class="bg-white p-6 rounded-lg shadow-sm">
                     <h2 class="text-2xl font-semibold text-gray-700 mb-6 border-b-2 border-green-500 pb-2">2025.05 - 2025.07</h2>
                     
-                    <div class="timeline-card p-4 rounded-lg">
-                        <div class="flex justify-between items-center mb-2">
-                            <span class="event-type event-official">국제행사</span>
-                            <span class="text-sm text-gray-500 font-medium">2025.05.13</span>
+                    <!-- Featured event with image: International forum -->
+                    <div class="timeline-card featured-event mb-4">
+                        <img src="https://page.gensparksite.com/slides_images/667ccfe36f44a9d16335ba740e3e55a8.jpg" alt="국제포럼 발표" class="action-img w-40 h-28 object-cover rounded-l-lg">
+                        <div class="featured-content flex-1">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="event-type event-official">국제행사</span>
+                                <span class="text-sm text-gray-500 font-medium">2025.05.13</span>
+                            </div>
+                            <div class="font-bold text-gray-800 mb-1">Laos-Korea net-Zero 국제포럼 참석</div>
+                            <div class="text-sm text-gray-600">양국 간 탄소중립 협력 방안 논의 및 사례 발표</div>
                         </div>
-                        <div class="font-bold text-gray-800 mb-1">Laos-Korea net-Zero 국제포럼 참석</div>
-                        <div class="text-sm text-gray-600">양국 간 탄소중립 협력 방안 논의 및 사례 발표</div>
                     </div>
 
                     <div class="timeline-card p-4 rounded-lg">
@@ -221,13 +261,17 @@
                         <div class="text-sm text-gray-600">태양광 발전 프로젝트 부지 제공 및 협력 약정</div>
                     </div>
 
-                    <div class="timeline-card p-4 rounded-lg">
-                        <div class="flex justify-between items-center mb-2">
-                            <span class="event-type event-support">지역지원</span>
-                            <span class="text-sm text-gray-500 font-medium">2025.06</span>
+                    <!-- Featured event with image: Community support -->
+                    <div class="timeline-card featured-event mb-4">
+                        <img src="https://page.gensparksite.com/slides_images/0db359009a9be01c6b85130e8b2c7946.jpg" alt="지역사회 지원 활동" class="action-img w-40 h-28 object-cover rounded-l-lg">
+                        <div class="featured-content flex-1">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="event-type event-support">지역지원</span>
+                                <span class="text-sm text-gray-500 font-medium">2025.06</span>
+                            </div>
+                            <div class="font-bold text-gray-800 mb-1">우돔싸이주 주지사 주최 체육대회 지원</div>
+                            <div class="text-sm text-gray-600">지역사회 행사 지원 및 유대관계 강화</div>
                         </div>
-                        <div class="font-bold text-gray-800 mb-1">우돔싸이주 주지사 주최 체육대회 지원</div>
-                        <div class="text-sm text-gray-600">지역사회 행사 지원 및 유대관계 강화</div>
                     </div>
 
                     <div class="timeline-card p-4 rounded-lg">
@@ -317,7 +361,7 @@
                         <li><a class="hover:text-green-400" href="projects.html">주요 프로젝트</a></li>
                         <li><a class="hover:text-green-400" href="impact.html">임팩트 성과</a></li>
                         <li><a class="hover:text-green-400" href="partnership.html">파트너십</a></li>
-                        <li><a class="hover:text-green-400" href="actions.html">라오스 액션</a></li>
+                        <li><a class="hover:text-green-400" href="actions.html">라오스 활동</a></li>
                     </ul>
                 </div>
                 <div>
