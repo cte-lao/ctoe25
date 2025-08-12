@@ -3,40 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>주요 프로젝트 - CTE</title>
+    <title>회사 소개 - CTE</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
-    <!-- 네비게이션 -->
-    <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-16">
-                <div class="flex items-center">
-                    <div class="flex-shrink-0">
-                        <span class="text-2xl font-bold text-green-600">CTE</span>
-                        <span class="ml-2 text-sm text-gray-600">Climate-Tech Energy</span>
-                    </div>
-                </div>
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="index.html" class="text-gray-700 hover:text-green-600 transition-colors">홈</a>
-                    <a href="about.html" class="text-gray-700 hover:text-green-600 transition-colors">회사소개</a>
-                    <a href="business.html" class="text-gray-700 hover:text-green-600 transition-colors">사업영역</a>
-                    <a href="projects.html" class="text-green-600 font-semibold">프로젝트</a>
-                    <a href="impact.html" class="text-gray-700 hover:text-green-600 transition-colors">임팩트</a>
-                    <a href="partnership.html" class="text-gray-700 hover:text-green-600 transition-colors">파트너십</a>
-                    <a href="contact.html" class="text-gray-700 hover:text-green-600 transition-colors">연락처</a>
-                </div>
-                <div class="md:hidden flex items-center">
-                    <button id="mobile-menu-btn" class="text-gray-700">
-                        <i class="fas fa-bars text-xl"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </nav>
+ <!-- 네비게이션 -->
+<nav class="bg-white shadow-lg fixed w-full top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-16">
+      
+      <!-- 왼쪽 로고 -->
+      <div class="flex items-center">
+        <a href="index.html" class="flex items-center">
+          <img src="images/CTE_blue_ver2.png" alt="CTE Logo" class="h-6 w-auto mr-2">
+<!--           <span class="text-2xl font-bold text-green-600">CTE</span> -->
+          <span class="ml-2 text-sm text-gray-600">Climate-Tech Energy, Carbon To Energy</span>
+        </a>
+      </div>
+
+      <!-- 오른쪽 메뉴 (데스크탑) -->
+      <div class="hidden md:flex items-center space-x-8">
+        <a class="text-green-600 font-semibold" href="index.html">홈</a>
+        <a class="text-gray-700 hover:text-green-600 transition-colors" href="about.html">회사소개</a>
+        <a class="text-gray-700 hover:text-green-600 transition-colors" href="business.html">사업영역</a>
+        <a class="text-gray-700 hover:text-green-600 transition-colors" href="projects.html">프로젝트</a>
+        <a class="text-gray-700 hover:text-green-600 transition-colors" href="impact.html">임팩트</a>
+        <a class="text-gray-700 hover:text-green-600 transition-colors" href="partnership.html">파트너십</a>
+        <a class="text-gray-700 hover:text-green-600 transition-colors" href="contact.html">연락처</a>
+      </div>
+
+      <!-- 모바일 메뉴 버튼 -->
+      <div class="md:hidden flex items-center">
+        <button class="text-gray-700" id="mobile-menu-btn">
+          <i class="fas fa-bars text-xl"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- 모바일 메뉴 -->
+    <div class="md:hidden hidden" id="mobile-menu">
+      <div class="px-2 pt-2 pb-3 space-y-1">
+        <a class="block px-3 py-2 text-green-600 font-semibold" href="index.html">홈</a>
+        <a class="block px-3 py-2 text-gray-700 hover:text-green-600" href="about.html">회사소개</a>
+        <a class="block px-3 py-2 text-gray-700 hover:text-green-600" href="business.html">사업영역</a>
+        <a class="block px-3 py-2 text-gray-700 hover:text-green-600" href="projects.html">프로젝트</a>
+        <a class="block px-3 py-2 text-gray-700 hover:text-green-600" href="impact.html">임팩트</a>
+        <a class="block px-3 py-2 text-gray-700 hover:text-green-600" href="partnership.html">파트너십</a>
+        <a class="block px-3 py-2 text-gray-700 hover:text-green-600" href="contact.html">연락처</a>
+      </div>
+    </div>
+  </div>
+</nav>
 
     <!-- 메인 콘텐츠 -->
     <main class="pt-16 min-h-screen bg-gray-50">
@@ -287,4 +307,5 @@
 
     <script src="js/main.js"></script>
 </body>
+
 </html>
