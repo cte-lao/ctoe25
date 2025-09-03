@@ -3,359 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>연락처 및 제안 - CTE</title>
+    <title>연락처 - CTE</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <style>
-        * {
-            font-family: 'Noto Sans KR', sans-serif;
-        }
-        .contact-card {
-            transition: all 0.3s ease;
-            border: 2px solid transparent;
-        }
-        .contact-card:hover {
-            border-color: #10b981;
-            box-shadow: 0 10px 25px rgba(16, 185, 129, 0.15);
-            transform: translateY(-2px);
-        }
-        .nav-link {
-            transition: color 0.3s ease;
-        }
-        .nav-link:hover {
-            color: #10b981;
-        }
-        .form-input {
-            transition: all 0.3s ease;
-        }
-        .form-input:focus {
-            border-color: #10b981;
-            box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
-        }
-        .contact-bg {
-            background: linear-gradient(135deg, #ecfdf5 0%, #f0fdf4 100%);
-        }
-        .map-container {
-            position: relative;
-            overflow: hidden;
-            border-radius: 0.5rem;
-        }
-    </style>
+    <style>*{font-family:'Noto Sans KR',sans-serif}</style>
 </head>
 <body class="bg-gray-50">
-    <!-- Navigation -->
-    <nav class="bg-white shadow-sm sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16">
-                <div class="flex items-center">
-                    <div class="text-2xl font-bold text-green-600">CTE</div>
-                    <div class="ml-2 text-sm text-gray-600">Climate-Tech Energy</div>
-                </div>
-                <div class="hidden md:block">
-                    <div class="ml-10 flex items-baseline space-x-4">
-                        <a href="index.html" class="nav-link text-gray-700 hover:text-green-600 px-3 py-2 text-sm font-medium">홈</a>
-                        <a href="about.html" class="nav-link text-gray-700 hover:text-green-600 px-3 py-2 text-sm font-medium">회사소개</a>
-                        <a href="business.html" class="nav-link text-gray-700 hover:text-green-600 px-3 py-2 text-sm font-medium">사업영역</a>
-                        <a href="projects.html" class="nav-link text-gray-700 hover:text-green-600 px-3 py-2 text-sm font-medium">프로젝트</a>
-                        <a href="impact.html" class="nav-link text-gray-700 hover:text-green-600 px-3 py-2 text-sm font-medium">임팩트</a>
-                        <a href="partnership.html" class="nav-link text-gray-700 hover:text-green-600 px-3 py-2 text-sm font-medium">파트너십</a>
-                        <a href="contact.html" class="nav-link text-green-600 px-3 py-2 text-sm font-medium border-b-2 border-green-600">연락처</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <section class="contact-bg py-16">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 class="text-4xl font-bold text-gray-900 mb-4">연락처 및 제안</h1>
-            <p class="text-xl text-gray-600 mb-8">함께 만드는 지속가능한 미래</p>
-            <div class="flex justify-center items-center space-x-8">
-                <div class="text-center">
-                    <div class="text-3xl font-bold text-green-600">24시간</div>
-                    <div class="text-gray-600">빠른 응답</div>
-                </div>
-                <div class="text-center">
-                    <div class="text-3xl font-bold text-green-600">전문가</div>
-                    <div class="text-gray-600">상담 지원</div>
-                </div>
-                <div class="text-center">
-                    <div class="text-3xl font-bold text-green-600">맞춤형</div>
-                    <div class="text-gray-600">솔루션 제안</div>
-                </div>
-            </div>
+<!-- 네비게이션 -->
+<nav class="bg-white shadow-lg fixed w-full top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-16">
+      <div class="flex items-center">
+        <a href="index.html" class="flex items-center">
+          <img src="../images/CTE_blue_ver2.png" alt="CTE Logo" class="h-6 w-auto mr-2">
+          <span class="ml-2 text-sm text-gray-600">Climate-Tech Energy, Carbon To Energy</span>
+        </a>
+      </div>
+      <div class="hidden md:flex items-center space-x-8">
+        <a class="text-gray-700 hover:text-green-600 transition-colors" href="index.html">홈</a>
+        <a class="text-gray-700 hover:text-green-600 transition-colors" href="about.html">회사소개</a>
+        <a class="text-gray-700 hover:text-green-600 transition-colors" href="business.html">사업영역</a>
+        <a class="text-gray-700 hover:text-green-600 transition-colors" href="projects.html">프로젝트</a>
+        <a class="text-gray-700 hover:text-green-600 transition-colors" href="impact.html">사업가치</a>
+        <a class="text-gray-700 hover:text-green-600 transition-colors" href="actions.html">주요활동</a>
+        <a class="text-green-600 font-semibold" href="contact.html">연락처</a>
+        <!-- 언어 선택 -->
+        <div class="flex items-center space-x-3">
+          <a href="../contact.html" title="한국어"><img class="w-6 h-4" src="../images/flag_kr.png" alt="KR"></a>
+          <a href="../eng/contact.html" title="English"><img class="w-6 h-4" src="../images/flag_us.png" alt="EN"></a>
+          <a href="../laos/contact.html" title="Lao"><img class="w-6 h-4" src="../images/flag_la.png" alt="LO"></a>
         </div>
-    </section>
+      </div>
+    </div>
+  </div>
+</nav>
 
-    <!-- Contact Information -->
-    <section class="py-16 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-gray-900 mb-4">연락처 정보</h2>
-                <p class="text-gray-600">언제든지 연락주시면 신속하게 답변드리겠습니다</p>
-            </div>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="contact-card bg-white p-6 rounded-lg shadow-sm text-center">
-                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-envelope text-green-600 text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-2">이메일</h3>
-                    <p class="text-gray-600 mb-4">paulyang@ctoe.co.kr</p>
-                    <a href="mailto:paulyang@ctoe.co.kr" class="text-green-600 hover:text-green-700 font-medium">메일 보내기</a>
-                </div>
-                
-                <div class="contact-card bg-white p-6 rounded-lg shadow-sm text-center">
-                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-phone text-blue-600 text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-2">전화</h3>
-                    <p class="text-gray-600 mb-4">+82-2-123-4567</p>
-                    <a href="tel:+8221234567" class="text-green-600 hover:text-green-700 font-medium">전화하기</a>
-                </div>
-                
-                <div class="contact-card bg-white p-6 rounded-lg shadow-sm text-center">
-                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-map-marker-alt text-purple-600 text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-2">본사</h3>
-                    <p class="text-gray-600 mb-4">서울 양재동 NH디지털혁신캠퍼스</p>
-                    <a href="#map" class="text-green-600 hover:text-green-700 font-medium">위치 보기</a>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- 연락처 섹션 -->
+<section class="py-24 bg-white mt-16">
+  <div class="max-w-3xl mx-auto text-center">
+    <h1 class="text-4xl font-bold text-gray-900 mb-6">연락처</h1>
+    <p class="text-lg text-gray-600 mb-12">
+      이메일로 언제든 연락 주시면 <span class="text-green-600 font-semibold">신속히 대응</span>하겠습니다.
+    </p>
+    <div class="space-y-6">
+      <p class="text-xl text-gray-800">
+        <i class="fas fa-envelope text-green-600 mr-2"></i>
+        <a href="mailto:paulyang@ctoe.co.kr" class="hover:underline">paulyang@ctoe.co.kr</a>
+      </p>
+      <!-- <p class="text-xl text-gray-800">
+        <i class="fas fa-phone text-green-600 mr-2"></i>
+        <a href="tel:+821027581193" class="hover:underline">+82-10-2758-1193</a>
+      </p> -->
+    </div>
+  </div>
+</section>
 
-    <!-- Contact Form -->
-    <section class="py-16 bg-gray-50">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-gray-900 mb-4">프로젝트 제안 및 문의</h2>
-                <p class="text-gray-600">탄소중립 프로젝트나 파트너십에 관심이 있으시면 연락주세요</p>
-            </div>
-            <div class="bg-white p-8 rounded-lg shadow-sm">
-                <form class="space-y-6">
-                    <div class="grid md:grid-cols-2 gap-6">
-                        <div>
-                            <label for="name" class="block text-sm font-medium text-gray-700 mb-2">성명</label>
-                            <input type="text" id="name" name="name" class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none" placeholder="홍길동">
-                        </div>
-                        <div>
-                            <label for="company" class="block text-sm font-medium text-gray-700 mb-2">회사명</label>
-                            <input type="text" id="company" name="company" class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none" placeholder="회사명을 입력해주세요">
-                        </div>
-                    </div>
-                    
-                    <div class="grid md:grid-cols-2 gap-6">
-                        <div>
-                            <label for="email" class="block text-sm font-medium text-gray-700 mb-2">이메일</label>
-                            <input type="email" id="email" name="email" class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none" placeholder="example@company.com">
-                        </div>
-                        <div>
-                            <label for="phone" class="block text-sm font-medium text-gray-700 mb-2">연락처</label>
-                            <input type="tel" id="phone" name="phone" class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none" placeholder="010-1234-5678">
-                        </div>
-                    </div>
-                    
-                    <div>
-                        <label for="inquiry_type" class="block text-sm font-medium text-gray-700 mb-2">문의 유형</label>
-                        <select id="inquiry_type" name="inquiry_type" class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none">
-                            <option value="">문의 유형을 선택해주세요</option>
-                            <option value="partnership">파트너십 협력</option>
-                            <option value="investment">투자 문의</option>
-                            <option value="project">프로젝트 제안</option>
-                            <option value="carbon_credit">탄소크레딧 구매</option>
-                            <option value="consulting">컨설팅 서비스</option>
-                            <option value="other">기타 문의</option>
-                        </select>
-                    </div>
-                    
-                    <div>
-                        <label for="message" class="block text-sm font-medium text-gray-700 mb-2">메시지</label>
-                        <textarea id="message" name="message" rows="6" class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none" placeholder="프로젝트 내용이나 협력 방안에 대해 자세히 설명해주세요..."></textarea>
-                    </div>
-                    
-                    <div class="text-center">
-                        <button type="submit" class="bg-green-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-700 transition duration-300">
-                            <i class="fas fa-paper-plane mr-2"></i>제안서 보내기
-                        </button>
-                    </div>
-                </form>
-            </div>
+<!-- 푸터 -->
+<footer class="bg-gray-800 text-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div>
+        <div class="text-2xl font-bold text-green-400 mb-4">
+          <img src="../images/CTE_White.png" alt="CTE Logo" class="h-6 w-auto mr-2">
         </div>
-    </section>
+        <p class="text-gray-300 mb-4">라오스 탄소중립, 지속가능한 에너지 솔루션</p>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold mb-4">사업 영역</h3>
+        <ul class="space-y-2 text-gray-300">
+          <li><a class="hover:text-green-400" href="business.html">청정에너지 개발</a></li>
+          <li><a class="hover:text-green-400" href="business.html">국제감축사업</a></li>
+          <li><a class="hover:text-green-400" href="business.html">EV 전환 사업</a></li>
+          <li><a class="hover:text-green-400" href="actions.html">라오스 활동</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold mb-4">주요 프로젝트</h3>
+        <ul class="space-y-2 text-gray-300">
+          <li><a class="hover:text-green-400" href="projects.html">우돔싸이 100MW 태양광</a></li>
+          <li><a class="hover:text-green-400" href="projects.html">바이오가스+ESS 프로젝트</a></li>
+          <li><a class="hover:text-green-400" href="projects.html">국제감축사업</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold mb-4">연락처</h3>
+        <div class="space-y-2 text-gray-300">
+          <p><i class="fas fa-envelope mr-2"></i><a class="hover:text-green-400" href="mailto:paulyang@ctoe.co.kr">paulyang@ctoe.co.kr</a></p>
+          <!-- <p><i class="fas fa-phone mr-2"></i><a class="hover:text-green-400" href="tel:+821027581193">+82-10-2758-1193</a></p> -->
+          <p><i class="fas fa-map-marker-alt mr-2"></i>서울 양재동 NH디지털혁신캠퍼스509호</p>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+      <p>© 2025 CTE Co., Ltd. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
 
-    <!-- Key Personnel -->
-    <section class="py-16 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-gray-900 mb-4">주요 담당자</h2>
-                <p class="text-gray-600">전문성을 갖춘 팀이 최적의 솔루션을 제공합니다</p>
-            </div>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="contact-card bg-white p-6 rounded-lg shadow-sm text-center">
-                    <div class="w-24 h-24 bg-gradient-to-br from-green-400 to-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-user text-white text-3xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-2">Paul YANG</h3>
-                    <p class="text-green-600 font-medium mb-2">대표이사</p>
-                    <p class="text-gray-600 mb-4">탄소시장 전문가<br>국제감축사업 기획</p>
-                    <div class="space-y-2">
-                        <p class="text-sm text-gray-700"><i class="fas fa-envelope mr-2"></i>paulyang@ctoe.co.kr</p>
-                        <p class="text-sm text-gray-700"><i class="fas fa-phone mr-2"></i>+82-2-123-4567</p>
-                    </div>
-                </div>
-                
-                <div class="contact-card bg-white p-6 rounded-lg shadow-sm text-center">
-                    <div class="w-24 h-24 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-user-tie text-white text-3xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-2">김에너지</h3>
-                    <p class="text-blue-600 font-medium mb-2">사업개발 이사</p>
-                    <p class="text-gray-600 mb-4">신재생에너지 전문가<br>프로젝트 개발 관리</p>
-                    <div class="space-y-2">
-                        <p class="text-sm text-gray-700"><i class="fas fa-envelope mr-2"></i>energy.kim@ctoe.co.kr</p>
-                        <p class="text-sm text-gray-700"><i class="fas fa-phone mr-2"></i>+82-2-123-4568</p>
-                    </div>
-                </div>
-                
-                <div class="contact-card bg-white p-6 rounded-lg shadow-sm text-center">
-                    <div class="w-24 h-24 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-user-graduate text-white text-3xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-2">이탄소</h3>
-                    <p class="text-purple-600 font-medium mb-2">기술이사</p>
-                    <p class="text-gray-600 mb-4">탄소회계 전문가<br>MRV 시스템 구축</p>
-                    <div class="space-y-2">
-                        <p class="text-sm text-gray-700"><i class="fas fa-envelope mr-2"></i>carbon.lee@ctoe.co.kr</p>
-                        <p class="text-sm text-gray-700"><i class="fas fa-phone mr-2"></i>+82-2-123-4569</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Location Map -->
-    <section id="map" class="py-16 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-gray-900 mb-4">오시는 길</h2>
-                <p class="text-gray-600">서울 양재동 NH디지털혁신캠퍼스</p>
-            </div>
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="map-container bg-gray-200 h-80 flex items-center justify-center">
-                    <div class="text-center">
-                        <i class="fas fa-map-marker-alt text-green-600 text-4xl mb-4"></i>
-                        <p class="text-gray-700 font-medium">서울특별시 서초구 양재동</p>
-                        <p class="text-gray-700">NH디지털혁신캠퍼스</p>
-                        <p class="text-sm text-gray-600 mt-2">지하철 3호선 양재역 3번 출구 도보 5분</p>
-                    </div>
-                </div>
-                <div class="space-y-6">
-                    <div>
-                        <h3 class="text-xl font-bold text-gray-900 mb-3">교통 안내</h3>
-                        <div class="space-y-3">
-                            <div class="flex items-start">
-                                <i class="fas fa-subway text-green-600 mt-1 mr-3"></i>
-                                <div>
-                                    <p class="font-medium text-gray-900">지하철</p>
-                                    <p class="text-gray-600">3호선 양재역 3번 출구 도보 5분</p>
-                                </div>
-                            </div>
-                            <div class="flex items-start">
-                                <i class="fas fa-bus text-blue-600 mt-1 mr-3"></i>
-                                <div>
-                                    <p class="font-medium text-gray-900">버스</p>
-                                    <p class="text-gray-600">간선: 146, 462, 540<br>지선: 3414, 4318</p>
-                                </div>
-                            </div>
-                            <div class="flex items-start">
-                                <i class="fas fa-car text-purple-600 mt-1 mr-3"></i>
-                                <div>
-                                    <p class="font-medium text-gray-900">자가용</p>
-                                    <p class="text-gray-600">강남순환로 양재IC 이용<br>건물 내 주차 가능</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <h3 class="text-xl font-bold text-gray-900 mb-3">방문 안내</h3>
-                        <div class="bg-yellow-50 p-4 rounded-lg">
-                            <p class="text-sm text-yellow-800">
-                                <i class="fas fa-info-circle mr-2"></i>
-                                방문 전 미리 연락주시면 더욱 원활한 상담이 가능합니다.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="py-16 bg-green-600">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-3xl font-bold text-white mb-4">지속가능한 미래를 함께 만들어갑시다</h2>
-            <p class="text-xl text-green-100 mb-8">탄소중립 목표 달성을 위한 혁신적인 솔루션을 제안합니다</p>
-            <div class="space-x-4">
-                <a href="mailto:paulyang@ctoe.co.kr" class="bg-white text-green-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300">즉시 문의하기</a>
-                <a href="projects.html" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-green-600 transition duration-300">프로젝트 보기</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid md:grid-cols-4 gap-8">
-                <div>
-                    <div class="text-2xl font-bold text-green-400 mb-4">CTE</div>
-                    <p class="text-gray-300 mb-4">Climate-Tech Carbon Credit Business Development</p>
-                    <p class="text-gray-400">지속가능한 에너지 솔루션으로 탄소중립 미래를 선도합니다.</p>
-                </div>
-                <div>
-                    <h4 class="text-lg font-semibold mb-4">사업 영역</h4>
-                    <ul class="space-y-2 text-gray-300">
-                        <li>탄소크레딧 사업</li>
-                        <li>청정에너지 사업</li>
-                        <li>EV 전환 사업</li>
-                        <li>국제감축사업</li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-lg font-semibold mb-4">회사 정보</h4>
-                    <ul class="space-y-2 text-gray-300">
-                        <li><a href="about.html" class="hover:text-green-400">회사소개</a></li>
-                        <li><a href="projects.html" class="hover:text-green-400">주요 프로젝트</a></li>
-                        <li><a href="impact.html" class="hover:text-green-400">임팩트 성과</a></li>
-                        <li><a href="partnership.html" class="hover:text-green-400">파트너십</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-lg font-semibold mb-4">연락처</h4>
-                    <div class="space-y-2 text-gray-300">
-                        <p><i class="fas fa-envelope mr-2"></i>paulyang@ctoe.co.kr</p>
-                        <p><i class="fas fa-phone mr-2"></i>+82-2-123-4567</p>
-                        <p><i class="fas fa-map-marker-alt mr-2"></i>서울 양재동 NH디지털혁신캠퍼스</p>
-                    </div>
-                    <div class="mt-4 flex space-x-3">
-                        <a href="#" class="text-gray-400 hover:text-green-400">
-                            <i class="fab fa-linkedin text-xl"></i>
-                        </a>
-                        <a href="#" class="text-gray-400 hover:text-green-400">
-                            <i class="fab fa-twitter text-xl"></i>
-                        </a>
-                        <a href="#" class="text-gray-400 hover:text-green-400">
-                            <i class="fab fa-facebook text-xl"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-                <p>&copy; 2025 CTE Co.,Ltd. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
 </body>
 </html>
